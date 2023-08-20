@@ -16,6 +16,34 @@
   margin: 0 0 0 20px;
 }
 
+.toc {
+  position: absolute;
+  width: 200px;
+  top: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+.toc li {
+  width: 100px;
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+#quiz {
+  position: absolute;
+  top: 0px;
+  left: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+#quiz h2 {
+  margin: 0;
+  padding: 0;
+}
+
 </style>
 <script type="text/javascript">
 let data = {
@@ -178,7 +206,7 @@ function loadAllTheThings() {
 </head>
 <body onload="loadAllTheThings();">
 <h1>Scott's Original Rush Quiz</h1>
-<p>
+<p style="width: 50%;">
 This is a recreation of a bunch of quizes I posted on <a href="https://forums.anandtech.com/">Anandtech Forums</a> in
 the early 2000s. It was a fun exercise in recording short snippets of Rush songs on classical guitar and seeing who
 could guess what song it's from.
@@ -186,7 +214,8 @@ could guess what song it's from.
 If I could find the link to the forum thread, it'll be displayed in the quiz. It's a fun exercise and reminder that
 some things the Internet doesn't forget. It was fun to read my less mature and juvenile posts from my early 20s.
 </p>
-<ul>
+<div style="position: relative;">
+<ul class="toc">
   <li>Quiz 1 (lost)</li>
   <li><a href="#" onclick="renderQuiz(data.quizes[0]); return false;">Quiz 2</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[1]); return false;">Quiz 3</a></li>
@@ -201,5 +230,6 @@ some things the Internet doesn't forget. It was fun to read my less mature and j
   <li><a href="#" onclick="renderQuiz(data.quizes[10]); return false;">Quiz 12</a></li>
 </ul>
 <div id="quiz" />
+</div>
 </body>
 </html>
