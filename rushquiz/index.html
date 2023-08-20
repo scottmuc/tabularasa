@@ -41,7 +41,39 @@ let data = {
       ]
     },
     { title: "Quiz 4", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-4-answers-revealed.849378/",
-      songs: []
+      songs: [
+        { id: 14, path: "audio/game4-1.mp3", answer: "Jacob's Ladder" },
+        { id: 15, path: "audio/game4-2.mp3", answer: "Driven" },
+        { id: 16, path: "audio/game4-3.mp3", answer: "Cygnus X1" },
+        { id: 17, path: "audio/game4-4.mp3", answer: "Tears" },
+        { id: 18, path: "audio/game4-5.mp3", answer: "Tai Shan" },
+        { id: 19, path: "audio/game4-6.mp3", answer: "Rivendell" },
+        { id: 20, path: "audio/game4-7.mp3", answer: "Manhattan Project" },
+        { id: 21, path: "audio/game4-bonus.mp3", answer: "Ultima VII - Stones" }
+      ]
+    },
+    { title: "Quiz 8", legacyThread: "https://forums.anandtech.com/threads/will-the-madness-ever-end-mucmans-rush-quiz-8-now-up.873452/",
+      songs: [
+        { id: 47, path: "audio/game8-1.mp3", answer: "Circumstances" },
+        { id: 48, path: "audio/game8-2.mp3", answer: "Madrigal" },
+        { id: 49, path: "audio/game8-3.mp3", answer: "Nobody's Hero" },
+        { id: 50, path: "audio/game8-4.mp3", answer: "Red Barchetta" },
+        { id: 51, path: "audio/game8-5.mp3", answer: "Spirit of the Radio" },
+        { id: 52, path: "audio/game8-6.mp3", answer: "Ghost of a Chance" },
+        { id: 53, path: "audio/game8-7.mp3", answer: "Bastille Day" },
+        { id: 54, path: "audio/game8-bonus.mp3", answer: "Iron Maiden - The Trooper" }
+      ]
+    },
+    { title: "Quiz 12", legacyThread: "https://forums.anandtech.com/threads/mucmans-toughest-guitar-quiz-ever-no-rush-songs-this-time-answers-revealed.921046/",
+      songs: [
+        { id: 79, path: "audio/game12-1.mp3", answer: "Tea Party - Winter Solstice" },
+        { id: 80, path: "audio/game12-2.mp3", answer: "Marillion - Kaleigh" },
+        { id: 81, path: "audio/game12-3.mp3", answer: "Mahavishnu Orchestra - Maya Dance" },
+        { id: 82, path: "audio/game12-4.mp3", answer: "Badly Drawn Boy - Disillusion" },
+        { id: 83, path: "audio/game12-5.mp3", answer: "Santana - Sambe Pa Ti" },
+        { id: 84, path: "audio/game12-6.mp3", answer: "The Smiths - This Charming Man" },
+        { id: 85, path: "audio/game12-7.mp3", answer: "XTC - Dear God" }
+      ]
     }
    ]
 };
@@ -91,7 +123,10 @@ some things the Internet doesn't forget. It was fun to read my less mature and j
   <li>Quiz 2 (lost)</li>
   <li><a href="#" onclick="renderQuiz(data.quizes[1]); return false;">Quiz 3</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[2]); return false;">Quiz 4</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[3]); return false;">Quiz 8</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[4]); return false;">Quiz 12</a></li>
 </ul>
 <div id="quiz" />
 </body>
 </html>
+
