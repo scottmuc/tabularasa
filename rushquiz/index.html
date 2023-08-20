@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
 .song {
   margin: 20px 0 0 0;
 }
@@ -14,118 +15,83 @@
   display: none;
   margin: 0 0 0 20px;
 }
+
 </style>
 <script type="text/javascript">
+
 let data = {
-  "songs": [
-    { "id": 1, "path": "audio/game1.mp3", "answer": "What You're Doing" },
-    { "id": 2, "path": "audio/game2.mp3", "answer": "Fly by Night" },
-    { "id": 3, "path": "audio/game3.mp3", "answer": "La Villa Strangiato" },
-    { "id": 4, "path": "audio/game4.mp3", "answer": "Different Strings" },
-    { "id": 5, "path": "audio/game5.mp3", "answer": "A Farewell to Kings" },
-    { "id": 6, "path": "audio/game3-1.mp3", "answer": "Something for Nothing" },
-    { "id": 7, "path": "audio/game4-1.mp3", "answer": "Jacob's Ladder" },
-    { "id": 8, "path": "audio/game5-1.mp3", "answer": "Xanadu" },
-    { "id": 9, "path": "audio/game6-1.mp3", "answer": "Closer to the Heart" },
-    { "id": 10, "path": "audio/game7-1.mp3", "answer": "Before and After" },
-    { "id": 11, "path": "audio/game8-1.mp3", "answer": "Circumstances" },
-    { "id": 12, "path": "audio/game9-1.mp3", "answer": "The Pass" },
-    { "id": 13, "path": "audio/game10-1.mp3", "answer": "The Necromancer" },
-    { "id": 14, "path": "audio/game11-1.mp3", "answer": "A Farewell to Kings" },
-    { "id": 15, "path": "audio/game3-2.mp3", "answer": "Fountain of Lamneth (Panacea)" },
-    { "id": 16, "path": "audio/game4-2.mp3", "answer": "Driven" },
-    { "id": 17, "path": "audio/game5-2.mp3", "answer": "Limelight" },
-    { "id": 18, "path": "audio/game6-2.mp3", "answer": "The Beatles - Here Comes the Sun" },
-    { "id": 19, "path": "audio/game7-2.mp3", "answer": "Through the Camera Eye" },
-    { "id": 20, "path": "audio/game8-2.mp3", "answer": "Madrigal" },
-    { "id": 21, "path": "audio/game9-2.mp3", "answer": "Enemy Within" },
-    { "id": 22, "path": "audio/game10-2.mp3", "answer": "Xanada" },
-    { "id": 23, "path": "audio/game11-2.mp3", "answer": "Distant Early Warning" },
-    { "id": 24, "path": "audio/game3-3.mp3", "answer": "Show Don't Tell" },
-    { "id": 25, "path": "audio/game4-3.mp3", "answer": "Cygnus X1" },
-    { "id": 26, "path": "audio/game5-3.mp3", "answer": "Natural Science" },
-    { "id": 27, "path": "audio/game6-3.mp3", "answer": "Led Zeppelin - Babe I'm Gonna Leave You" },
-    { "id": 28, "path": "audio/game7-3.mp3", "answer": "Analog Kid" },
-    { "id": 29, "path": "audio/game8-3.mp3", "answer": "Nobody's Hero" },
-    { "id": 30, "path": "audio/game9-3.mp3", "answer": "2112" },
-    { "id": 31, "path": "audio/game10-3.mp3", "answer": "Freewill" },
-    { "id": 32, "path": "audio/game11-3.mp3", "answer": "The Necromancer" },
-    { "id": 33, "path": "audio/game3-4.mp3", "answer": "Here Again" },
-    { "id": 34, "path": "audio/game4-4.mp3", "answer": "Tears" },
-    { "id": 35, "path": "audio/game5-4.mp3", "answer": "Superconductor" },
-    { "id": 36, "path": "audio/game6-4.mp3", "answer": "Extreme - More than Words" },
-    { "id": 37, "path": "audio/game7-4.mp3", "answer": "Entres Nous" },
-    { "id": 38, "path": "audio/game8-4.mp3", "answer": "Red Barchetta" },
-    { "id": 39, "path": "audio/game9-4.mp3", "answer": "In the End" },
-    { "id": 40, "path": "audio/game10-4.mp3", "answer": "Making Memories" },
-    { "id": 41, "path": "audio/game11-4.mp3", "answer": "Red Barchetta" },
-    { "id": 42, "path": "audio/game3-5.mp3", "answer": "Bytor and the Snow Dog" },
-    { "id": 43, "path": "audio/game4-5.mp3", "answer": "Tai Shan" },
-    { "id": 44, "path": "audio/game5-5.mp3", "answer": "Test For Echo" },
-    { "id": 45, "path": "audio/game6-5.mp3", "answer": "Collective Soul - December" },
-    { "id": 46, "path": "audio/game7-5.mp3", "answer": "Territories" },
-    { "id": 47, "path": "audio/game8-5.mp3", "answer": "Spirit of the Radio" },
-    { "id": 48, "path": "audio/game9-5.mp3", "answer": "Natural Science" },
-    { "id": 49, "path": "audio/game10-5.mp3", "answer": "2112" },
-    { "id": 50, "path": "audio/game11-5.mp3", "answer": "Lessons" },
-    { "id": 51, "path": "audio/game3-6.mp3", "answer": "YYZ" },
-    { "id": 52, "path": "audio/game4-6.mp3", "answer": "Rivendell" },
-    { "id": 53, "path": "audio/game5-6.mp3", "answer": "The Necromancer" },
-    { "id": 54, "path": "audio/game6-6.mp3", "answer": "Pink Floyd - Wish You Were Here" },
-    { "id": 55, "path": "audio/game7-6.mp3", "answer": "Virtuality" },
-    { "id": 56, "path": "audio/game8-6.mp3", "answer": "Ghost of a Chance" },
-    { "id": 57, "path": "audio/game9-6.mp3", "answer": "Leave that Thing Alone" },
-    { "id": 58, "path": "audio/game10-6.mp3", "answer": "Where's My Thing" },
-    { "id": 59, "path": "audio/game11-6.mp3", "answer": "Time Stand Still" },
-    { "id": 60, "path": "audio/game3-7.mp3", "answer": "Hemispheres" },
-    { "id": 61, "path": "audio/game4-7.mp3", "answer": "Manhattan Project" },
-    { "id": 62, "path": "audio/game5-7.mp3", "answer": "Twilight Zone" },
-    { "id": 63, "path": "audio/game6-7.mp3", "answer": "Ozzy Osborne - Diary of a Madman" },
-    { "id": 64, "path": "audio/game7-7.mp3", "answer": "Beneath, Between & Behind" },
-    { "id": 65, "path": "audio/game8-7.mp3", "answer": "Bastille Day" },
-    { "id": 66, "path": "audio/game9-7.mp3", "answer": "Need Some Love" },
-    { "id": 67, "path": "audio/game10-7.mp3", "answer": "Kids Gloves" },
-    { "id": 68, "path": "audio/game11-7.mp3", "answer": "Witch Hunt" },
-    { "id": 69, "path": "audio/game3-bonus.mp3", "answer": "Marillion - Easter" },
-    { "id": 70, "path": "audio/game4-bonus.mp3", "answer": "Ultima VII - Stones" },
-    { "id": 71, "path": "audio/game5-bonus.mp3", "answer": "Led Zeppelin - Over the Hils and Far Away" },
-    { "id": 72, "path": "audio/game6-bonus.mp3", "answer": "Nick Drake - Joey" },
-    { "id": 73, "path": "audio/game7-bonus.mp3", "answer": "Dream Theater - Peruvian Skies" },
-    { "id": 74, "path": "audio/game8-bonus.mp3", "answer": "Iron Maiden - The Trooper" },
-    { "id": 75, "path": "audio/game9-bonus.mp3", "answer": "Everlast - The Ends" },
-    { "id": 76, "path": "audio/game10-bonus.mp3", "answer": "Jethro Tull - Aqualung" },
-    { "id": 77, "path": "audio/game11-bonus.mp3", "answer": "Victor - Promise" },
-    { "id": 78, "path": "audio/game12-1.mp3", "answer": "Tea Party - Winter Solstice" },
-    { "id": 79, "path": "audio/game12-2.mp3", "answer": "Marillion - Kaleigh" },
-    { "id": 80, "path": "audio/game12-3.mp3", "answer": "Mahavishnu Orchestra - Maya Dance" },
-    { "id": 81, "path": "audio/game12-4.mp3", "answer": "Badly Drawn Boy - Disillusion" },
-    { "id": 82, "path": "audio/game12-5.mp3", "answer": "Santana - Sambe Pa Ti" },
-    { "id": 83, "path": "audio/game12-6.mp3", "answer": "The Smiths - This Charming Man" },
-    { "id": 84, "path": "audio/game12-7.mp3", "answer": "XTC - Dear God" },
-    { "id": 85, "path": "audio/game6-8.mp3", "answer": "Metallica - Nothing Else Matters" },
-  ]
+  quizes: [
+    { title: "Quiz 1", songs: [
+      { id: 1, path: "audio/game1.mp3", answer: "What You're Doing" },
+      { id: 2, path: "audio/game2.mp3", answer: "Fly by Night" },
+      { id: 3, path: "audio/game3.mp3", answer: "La Villa Strangiato" },
+      { id: 4, path: "audio/game4.mp3", answer: "Different Strings" },
+      { id: 5, path: "audio/game5.mp3", answer: "A Farewell to Kings" }
+    ]},
+    { title: "Quiz 3", legacyThread: "https://forums.anandtech.com/threads/mucmans-guess-the-rush-tune-3-back-by-popular-demand-bdawg-wins-again-now-incubus-track.845039/",
+      songs: [
+        { id: 6, path: "audio/game3-1.mp3", answer: "Something for Nothing" },
+        { id: 7, path: "audio/game3-2.mp3", answer: "Fountain of Lamneth (Panacea)" },
+        { id: 8, path: "audio/game3-3.mp3", answer: "Show Don't Tell" },
+        { id: 9, path: "audio/game3-4.mp3", answer: "Here Again" },
+        { id: 10, path: "audio/game3-5.mp3", answer: "Bytor and the Snow Dog" },
+        { id: 11, path: "audio/game3-6.mp3", answer: "YYZ" },
+        { id: 12, path: "audio/game3-7.mp3", answer: "Hemispheres" },
+        { id: 13, path: "audio/game3-bonus.mp3", answer: "Marillion - Easter" }
+      ]
+    },
+    { title: "Quiz 4", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-4-answers-revealed.849378/",
+      songs: []
+    }
+   ]
 };
 
-function loadAllTheThings() {
-  let html = "";
-  for(let s of data.songs) {
-    html += `<div class="song">`
-    html += `<audio controls><source src="${s.path}" type="audio/mpeg" /></audio>`
-    html += `<button onClick="revealSong(${s.id});">reveal the answer</button>`
-    html += `<span id="song-${s.id}" class="answer">${s.answer}</span>`
-    html += `</div>`
-  }
-  let container = document.getElementById("songs").innerHTML = html;
-};
+function renderSong(song) {
+    html = `<div class="song">`;
+    html += `<audio controls><source src="${song.path}" type="audio/mpeg" /></audio>`;
+    html += `<button onClick="revealSong(${song.id});">reveal the answer</button>`;
+    html += `<span id="song-${song.id}" class="answer">${song.answer}</span>`;
+    html += `</div>`;
+    return html;
+}
 
 function revealSong(id) {
   let elId = "song-" + id;
   document.getElementById(elId).style.display = "inline";
 }
+
+function renderQuiz(quiz) {
+  let html = "";
+  html += `<h2>${quiz.title}</h2>`
+  for(let s of quiz.songs) {
+    html += renderSong(s);
+  }
+
+  let container = document.getElementById("quiz").innerHTML = html;
+}
+
+function loadAllTheThings() {
+  renderQuiz(data.quizes[0]);
+};
+
 </script>
 </head>
 <body onload="loadAllTheThings();">
 <h1>Scott's Original Rush Quiz</h1>
-<div id="songs" />
+<p>
+This is a recreation of a bunch of quizes I posted on <a href="https://forums.anandtech.com/">Anandtech Forums</a> in
+the early 2000s. It was a fun exercise in recording short snippets of Rush songs on classical guitar and seeing who
+could guess what song it's from.
+
+If I could find the link to the forum thread, it'll be displayed in the quiz. It's a fun exercise and reminder that
+some things the Internet doesn't forget. It was fun to read my less mature and juvenile posts from my early 20s.
+</p>
+<ul>
+  <li><a href="#" onclick="renderQuiz(data.quizes[0]); return false;">Quiz 1</a></li>
+  <li>Quiz 2 (lost)</li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[1]); return false;">Quiz 3</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[2]); return false;">Quiz 4</a></li>
+</ul>
+<div id="quiz" />
 </body>
 </html>
