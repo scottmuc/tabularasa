@@ -18,7 +18,6 @@
 
 </style>
 <script type="text/javascript">
-
 let data = {
   quizes: [
     { title: "Quiz 1", songs: [
@@ -52,6 +51,39 @@ let data = {
         { id: 21, path: "audio/game4-bonus.mp3", answer: "Ultima VII - Stones" }
       ]
     },
+    { title: "Quiz 5", songs: [
+        { id: 22, path: "audio/game5-1.mp3", answer: "Xanadu" },
+        { id: 23, path: "audio/game5-2.mp3", answer: "Limelight" },
+        { id: 24, path: "audio/game5-3.mp3", answer: "Natural Science" },
+        { id: 25, path: "audio/game5-4.mp3", answer: "Superconductor" },
+        { id: 26, path: "audio/game5-5.mp3", answer: "Test For Echo" },
+        { id: 27, path: "audio/game5-6.mp3", answer: "The Necromancer" },
+        { id: 28, path: "audio/game5-7.mp3", answer: "Twilight Zone" },
+        { id: 29, path: "audio/game5-bonus.mp3", answer: "Led Zeppelin - Over the Hils and Far Away" },
+    ]},
+    { title: "Quiz 6", songs: [
+        { id: 30, path: "audio/game6-1.mp3", answer: "Closer to the Heart" },
+        { id: 31, path: "audio/game6-2.mp3", answer: "The Beatles - Here Comes the Sun" },
+        { id: 32, path: "audio/game6-3.mp3", answer: "Led Zeppelin - Babe I'm Gonna Leave You" },
+        { id: 33, path: "audio/game6-4.mp3", answer: "Extreme - More than Words" },
+        { id: 34, path: "audio/game6-5.mp3", answer: "Collective Soul - December" },
+        { id: 35, path: "audio/game6-6.mp3", answer: "Pink Floyd - Wish You Were Here" },
+        { id: 36, path: "audio/game6-7.mp3", answer: "Ozzy Osborne - Diary of a Madman" },
+        { id: 37, path: "audio/game6-8.mp3", answer: "Metallica - Nothing Else Matters" },
+        { id: 38, path: "audio/game6-bonus.mp3", answer: "Nick Drake - Joey" },
+    ]},
+    { title: "Quiz 7", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-7-sorry-for-the-delay.869778/",
+      songs: [
+        { id: 39, path: "audio/game7-1.mp3", answer: "Before and After" },
+        { id: 40, path: "audio/game7-2.mp3", answer: "Through the Camera Eye" },
+        { id: 41, path: "audio/game7-3.mp3", answer: "Analog Kid" },
+        { id: 42, path: "audio/game7-4.mp3", answer: "Entres Nous" },
+        { id: 43, path: "audio/game7-5.mp3", answer: "Territories" },
+        { id: 44, path: "audio/game7-6.mp3", answer: "Virtuality" },
+        { id: 45, path: "audio/game7-7.mp3", answer: "Beneath, Between & Behind" },
+        { id: 46, path: "audio/game7-bonus.mp3", answer: "Dream Theater - Peruvian Skies" },
+      ]
+    },
     { title: "Quiz 8", legacyThread: "https://forums.anandtech.com/threads/will-the-madness-ever-end-mucmans-rush-quiz-8-now-up.873452/",
       songs: [
         { id: 47, path: "audio/game8-1.mp3", answer: "Circumstances" },
@@ -64,6 +96,36 @@ let data = {
         { id: 54, path: "audio/game8-bonus.mp3", answer: "Iron Maiden - The Trooper" }
       ]
     },
+    { title: "Quiz 9", songs: [
+        { id: 55, path: "audio/game9-1.mp3", answer: "The Pass" },
+        { id: 56, path: "audio/game9-2.mp3", answer: "Enemy Within" },
+        { id: 57, path: "audio/game9-3.mp3", answer: "2112" },
+        { id: 58, path: "audio/game9-4.mp3", answer: "In the End" },
+        { id: 59, path: "audio/game9-5.mp3", answer: "Natural Science" },
+        { id: 60, path: "audio/game9-6.mp3", answer: "Leave that Thing Alone" },
+        { id: 61, path: "audio/game9-7.mp3", answer: "Need Some Love" },
+        { id: 62, path: "audio/game9-bonus.mp3", answer: "Everlast - The Ends" },
+    ]},
+    { title: "Quiz 10", songs: [
+        { id: 63, path: "audio/game10-1.mp3", answer: "The Necromancer" },
+        { id: 64, path: "audio/game10-2.mp3", answer: "Xanada" },
+        { id: 65, path: "audio/game10-3.mp3", answer: "Freewill" },
+        { id: 66, path: "audio/game10-4.mp3", answer: "Making Memories" },
+        { id: 67, path: "audio/game10-5.mp3", answer: "2112" },
+        { id: 68, path: "audio/game10-6.mp3", answer: "Where's My Thing" },
+        { id: 69, path: "audio/game10-7.mp3", answer: "Kids Gloves" },
+        { id: 70, path: "audio/game10-bonus.mp3", answer: "Jethro Tull - Aqualung" },
+    ]},
+    { title: "Quiz 11", songs: [
+        { id: 71, path: "audio/game11-1.mp3", answer: "A Farewell to Kings" },
+        { id: 72, path: "audio/game11-2.mp3", answer: "Distant Early Warning" },
+        { id: 73, path: "audio/game11-3.mp3", answer: "The Necromancer" },
+        { id: 74, path: "audio/game11-4.mp3", answer: "Red Barchetta" },
+        { id: 75, path: "audio/game11-5.mp3", answer: "Lessons" },
+        { id: 76, path: "audio/game11-6.mp3", answer: "Time Stand Still" },
+        { id: 77, path: "audio/game11-7.mp3", answer: "Witch Hunt" },
+        { id: 78, path: "audio/game11-bonus.mp3", answer: "Victor - Promise" },
+    ]},
     { title: "Quiz 12", legacyThread: "https://forums.anandtech.com/threads/mucmans-toughest-guitar-quiz-ever-no-rush-songs-this-time-answers-revealed.921046/",
       songs: [
         { id: 79, path: "audio/game12-1.mp3", answer: "Tea Party - Winter Solstice" },
@@ -123,10 +185,15 @@ some things the Internet doesn't forget. It was fun to read my less mature and j
   <li>Quiz 2 (lost)</li>
   <li><a href="#" onclick="renderQuiz(data.quizes[1]); return false;">Quiz 3</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[2]); return false;">Quiz 4</a></li>
-  <li><a href="#" onclick="renderQuiz(data.quizes[3]); return false;">Quiz 8</a></li>
-  <li><a href="#" onclick="renderQuiz(data.quizes[4]); return false;">Quiz 12</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[3]); return false;">Quiz 5</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[4]); return false;">Quiz 6</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[5]); return false;">Quiz 7</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[6]); return false;">Quiz 8</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[7]); return false;">Quiz 9</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[8]); return false;">Quiz 10</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[9]); return false;">Quiz 11</a></li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[10]); return false;">Quiz 12</a></li>
 </ul>
 <div id="quiz" />
 </body>
 </html>
-
