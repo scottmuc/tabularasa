@@ -20,7 +20,7 @@
 <script type="text/javascript">
 let data = {
   quizes: [
-    { title: "Quiz 1", songs: [
+    { title: "Quiz 2", legacyThread: "https://forums.anandtech.com/threads/guess-the-rush-song-part-2-something-in-here-for-ornery-and-isla-as-well-now-with-incubus-cover.841231/", songs: [
       { id: 1, path: "audio/game1.mp3", answer: "What You're Doing" },
       { id: 2, path: "audio/game2.mp3", answer: "Fly by Night" },
       { id: 3, path: "audio/game3.mp3", answer: "La Villa Strangiato" },
@@ -51,7 +51,8 @@ let data = {
         { id: 21, path: "audio/game4-bonus.mp3", answer: "Ultima VII - Stones" }
       ]
     },
-    { title: "Quiz 5", songs: [
+    { title: "Quiz 5", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-5-will-the-rush-butchery-ever-stop.859231/",
+      songs: [
         { id: 22, path: "audio/game5-1.mp3", answer: "Xanadu" },
         { id: 23, path: "audio/game5-2.mp3", answer: "Limelight" },
         { id: 24, path: "audio/game5-3.mp3", answer: "Natural Science" },
@@ -61,7 +62,8 @@ let data = {
         { id: 28, path: "audio/game5-7.mp3", answer: "Twilight Zone" },
         { id: 29, path: "audio/game5-bonus.mp3", answer: "Led Zeppelin - Over the Hils and Far Away" },
     ]},
-    { title: "Quiz 6", songs: [
+    { title: "Quiz 6", legacyThread: "https://forums.anandtech.com/threads/mucmans-guitar-quiz-6-this-one-is-for-everyone-not-just-rush-fans.863981/",
+      songs: [
         { id: 30, path: "audio/game6-1.mp3", answer: "Closer to the Heart" },
         { id: 31, path: "audio/game6-2.mp3", answer: "The Beatles - Here Comes the Sun" },
         { id: 32, path: "audio/game6-3.mp3", answer: "Led Zeppelin - Babe I'm Gonna Leave You" },
@@ -96,7 +98,8 @@ let data = {
         { id: 54, path: "audio/game8-bonus.mp3", answer: "Iron Maiden - The Trooper" }
       ]
     },
-    { title: "Quiz 9", songs: [
+    { title: "Quiz 9", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-9-better-late-than-never.887314/",
+      songs: [
         { id: 55, path: "audio/game9-1.mp3", answer: "The Pass" },
         { id: 56, path: "audio/game9-2.mp3", answer: "Enemy Within" },
         { id: 57, path: "audio/game9-3.mp3", answer: "2112" },
@@ -106,7 +109,8 @@ let data = {
         { id: 61, path: "audio/game9-7.mp3", answer: "Need Some Love" },
         { id: 62, path: "audio/game9-bonus.mp3", answer: "Everlast - The Ends" },
     ]},
-    { title: "Quiz 10", songs: [
+    { title: "Quiz 10", legacyThread: "https://forums.anandtech.com/threads/mucmans-rush-quiz-10-can-you-believe-theres-been-10-site-is-back-up.895731/",
+      songs: [
         { id: 63, path: "audio/game10-1.mp3", answer: "The Necromancer" },
         { id: 64, path: "audio/game10-2.mp3", answer: "Xanada" },
         { id: 65, path: "audio/game10-3.mp3", answer: "Freewill" },
@@ -116,7 +120,8 @@ let data = {
         { id: 69, path: "audio/game10-7.mp3", answer: "Kids Gloves" },
         { id: 70, path: "audio/game10-bonus.mp3", answer: "Jethro Tull - Aqualung" },
     ]},
-    { title: "Quiz 11", songs: [
+    { title: "Quiz 11", legacyThread: "https://forums.anandtech.com/threads/rush-quiz-11-yup-theres-more.903726/",
+      songs: [
         { id: 71, path: "audio/game11-1.mp3", answer: "A Farewell to Kings" },
         { id: 72, path: "audio/game11-2.mp3", answer: "Distant Early Warning" },
         { id: 73, path: "audio/game11-3.mp3", answer: "The Necromancer" },
@@ -157,6 +162,7 @@ function revealSong(id) {
 function renderQuiz(quiz) {
   let html = "";
   html += `<h2>${quiz.title}</h2>`
+  html += `<a href="${quiz.legacyThread}">Legacy Anandtech Post</a>`
   for(let s of quiz.songs) {
     html += renderSong(s);
   }
@@ -181,8 +187,8 @@ If I could find the link to the forum thread, it'll be displayed in the quiz. It
 some things the Internet doesn't forget. It was fun to read my less mature and juvenile posts from my early 20s.
 </p>
 <ul>
-  <li><a href="#" onclick="renderQuiz(data.quizes[0]); return false;">Quiz 1</a></li>
-  <li>Quiz 2 (lost)</li>
+  <li>Quiz 1 (lost)</li>
+  <li><a href="#" onclick="renderQuiz(data.quizes[0]); return false;">Quiz 2</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[1]); return false;">Quiz 3</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[2]); return false;">Quiz 4</a></li>
   <li><a href="#" onclick="renderQuiz(data.quizes[3]); return false;">Quiz 5</a></li>
