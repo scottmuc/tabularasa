@@ -182,12 +182,12 @@ let data = {
 };
 
 function renderSong(song) {
-    html = `<div class="song">`;
-    html += `<audio controls><source src="${song.path}" type="audio/mpeg" /></audio>`;
-    html += `<button onClick="revealSong(${song.id});">reveal the answer</button>`;
-    html += `<span id="song-${song.id}" class="answer">${song.answer}</span>`;
-    html += `</div>`;
-    return html;
+  html = `<div class="song">`;
+  html += `<audio controls><source src="${song.path}" type="audio/mpeg" /></audio>`;
+  html += `<button onClick="revealSong(${song.id});">reveal the answer</button>`;
+  html += `<span id="song-${song.id}" class="answer">${song.answer}</span>`;
+  html += `</div>`;
+  return html;
 }
 
 function revealSong(id) {
