@@ -14,7 +14,7 @@
 
 .song .answer {
   display: none;
-  margin: 0 0 0 20px;
+  margin: 13px 0 0 0;
 }
 
 .toc {
@@ -195,8 +195,8 @@ function revealSong(id) {
   let elId = "song-" + id;
   let answerEl = document.getElementById(elId);
   let btnEl = answerEl.previousElementSibling;
-  btnEl.disabled = true;
-  answerEl.style.display = "inline";
+  btnEl.style.display = "none";
+  answerEl.style.display = "inline-block";
 
 }
 
