@@ -192,7 +192,11 @@ function renderSong(song) {
 
 function revealSong(id) {
   let elId = "song-" + id;
-  document.getElementById(elId).style.display = "inline";
+  let answerEl = document.getElementById(elId);
+  let btnEl = answerEl.previousElementSibling;
+  btnEl.disabled = true;
+  answerEl.style.display = "inline";
+
 }
 
 function renderQuiz(quiz) {
