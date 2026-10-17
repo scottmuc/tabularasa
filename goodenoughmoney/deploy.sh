@@ -2,5 +2,5 @@
 
 set -e
 
-hugo --source src
-rsync -rvz src/public/ ansible@192.168.2.10:/opt/goodenoughmoney.com
+nix run nixpkgs#hugo -- --source src
+nix run nixpkgs#rsync -- -rvz src/public/ ansible@192.168.2.10:/opt/goodenoughmoney.com
